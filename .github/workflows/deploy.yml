@@ -34,16 +34,18 @@ jobs:
 
       - name: Build static files
         run: bun run build
+        env:
+          NITRO_PRESET: github-pages
+          VITE_BASE_URL: /VEDYRA-LABS/
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
-
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
           path: '.output/public'
 
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
