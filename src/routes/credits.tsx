@@ -127,29 +127,6 @@ function CreditsPage() {
             </motion.div>
           </LayoutGroup>
 
-          {/* Acknowledgement */}
-          <Reveal>
-            <div className="relative mt-14 overflow-hidden rounded-3xl border border-border-strong p-10 text-center">
-              <div className="absolute inset-0 -z-10" style={{ background: "var(--gradient-hero)" }} />
-              <div className="font-mono text-[10px] uppercase tracking-[0.28em] text-muted-foreground">Acknowledgement</div>
-              <h3 className="mt-3 font-display text-2xl font-semibold md:text-3xl">
-                Built at <span className="text-gradient">Birla Institute of Technology, Mesra.</span>
-              </h3>
-              <p className="mx-auto mt-4 max-w-2xl text-sm leading-relaxed text-muted-foreground">
-                With deep gratitude to BIT Mesra's AIML faculty, the Hyundai Innovation Challenge committee,
-                and every OEM, insurer and regulator engaging with the VHS Bureau vision.
-              </p>
-              <div className="mt-7 flex justify-center">
-                <Link
-                  to="/"
-                  className="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-primary to-secondary px-6 py-3 text-sm font-medium text-primary-foreground shadow-[0_15px_60px_-10px_oklch(0.62_0.22_280/0.8)]"
-                >
-                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.4"><path d="M19 12H5M12 19l-7-7 7-7" /></svg>
-                  Back to the bureau
-                </Link>
-              </div>
-            </div>
-          </Reveal>
         </div>
       </section>
 
@@ -185,7 +162,6 @@ function MemberCard({ m, open, onToggle }: { m: TeamMember; open: boolean; onTog
               className="h-full w-full object-cover transition duration-700 group-hover:scale-105"
               loading="lazy"
             />
-            <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-background/60 via-transparent to-transparent" />
             <span className="absolute left-2 top-2 rounded-full bg-background/70 px-2 py-0.5 font-mono text-[9px] uppercase tracking-wider text-foreground/90 backdrop-blur">
               {categoryMeta[m.category].label}
             </span>

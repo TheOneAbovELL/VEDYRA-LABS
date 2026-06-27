@@ -24,9 +24,9 @@ export const Route = createFileRoute("/about")({
   head: () => ({
     meta: [
       { title: "About VEDYRA Labs — What We Do & Our Vision" },
-      { name: "description", content: "Learn about VEDYRA Labs' mission: what we do, what we want to do, and our future scope to transform motor insurance using neutral vehicle health intelligence." },
+      { name: "description", content: "Learn about VEDYRA Labs' mission: what we do, what we want to do, and our future scope to standardise neutral mobility intelligence." },
       { property: "og:title", content: "About VEDYRA Labs" },
-      { property: "og:description", content: "Deep dive into our vehicle health scores, current operations, near-term goals, and future scope." },
+      { property: "og:description", content: "Deep dive into our telemetry evaluation models, current operations, near-term goals, and future scope." },
     ],
   }),
   component: AboutPage,
@@ -45,18 +45,18 @@ function AboutPage() {
     },
     {
       icon: Activity,
-      title: "Vehicle Health Scoring",
-      desc: "Our engine computes a neutral, CIBIL-like Vehicle Health Score (300-850) built on 5 weighted sub-scores to assess vehicle risk profile."
+      title: "Telemetry Evaluation Models",
+      desc: "Our engine computes a neutral evaluation standard (300-850) built on multiple analytical factors to assess objective profiles."
     },
     {
       icon: Database,
-      title: "Explainable Risk Profiling",
-      desc: "We run gradient-boosted ensembles with SHAP values to explain every risk factor, guaranteeing insurers explainability and full transparency."
+      title: "Explainable Data Modeling",
+      desc: "We run gradient-boosted ensembles with SHAP values to explain every factor, guaranteeing full transparency for ecosystem partners."
     },
     {
       icon: ShieldCheck,
-      title: "Regulatory Alignment",
-      desc: "Our bureau architecture complies with IRDAI sandbox requirements and the DPDPA (Digital Personal Data Protection Act) 2023 consent frameworks."
+      title: "Privacy & Compliance",
+      desc: "Our architectural framework is strictly aligned with the DPDPA (Digital Personal Data Protection Act) 2023 for secure data processing."
     }
   ];
 
@@ -64,22 +64,22 @@ function AboutPage() {
     {
       icon: TrendingUp,
       title: "Metropolitan Pilot Scale",
-      desc: "Deploy a sandbox pilot tracking 500+ connected vehicles across Tier 1 Indian cities to calibrate algorithms with real-world road and weather conditions."
+      desc: "Deploy an initial pilot tracking 500+ connected entities across Tier 1 Indian cities to calibrate algorithms with real-world road and weather conditions."
     },
     {
       icon: UserCheck,
-      title: "Owner Consent Application",
-      desc: "Build an intuitive owner-facing application available in 9 languages, allowing drivers to view their score and explicitly consent to sharing data with insurers."
+      title: "Owner Consent Interfaces",
+      desc: "Build an intuitive owner-facing interface, allowing drivers to view their evaluation metrics and explicitly consent to secure data transmission."
     },
     {
       icon: Code,
-      title: "Unified Insurer API Integration",
-      desc: "Publish developer portals and REST APIs for motor insurers, supporting millisecond response times to compute policy premiums during checkout."
+      title: "Unified Ecosystem APIs",
+      desc: "Publish developer portals and REST APIs for research groups and mobility networks, supporting millisecond response times for telemetry insights."
     },
     {
       icon: LineChart,
-      title: "Predictive Claims Correlation",
-      desc: "Demonstrate a verified lift of at least 18% in claims risk prediction compared to traditional IDV (Insured Declared Value) baseline pricing model."
+      title: "Predictive Health Correlation",
+      desc: "Demonstrate a verified lift in predictive accuracy for vehicle component longevity compared to traditional static metric baselines."
     }
   ];
 
@@ -87,12 +87,12 @@ function AboutPage() {
     {
       icon: Zap,
       title: "EV State-of-Health Diagnostics",
-      desc: "Construct predictive degradation models for EV lithium-ion batteries to standardize secondhand EV valuation and battery financing indices."
+      desc: "Construct predictive degradation models for EV lithium-ion batteries to standardize secondhand EV valuation indices."
     },
     {
       icon: Workflow,
-      title: "Vahan & Sarathi Deep Fusion",
-      desc: "Fuse real-time vehicle telematics indices directly with India's central Vahan registry to automate compliance audits and micro-insurance claims."
+      title: "Registry Deep Fusion",
+      desc: "Fuse real-time vehicle telematics indices directly with central vehicle registries to automate compliance audits and safety research."
     },
     {
       icon: Share2,
@@ -101,8 +101,8 @@ function AboutPage() {
     },
     {
       icon: Compass,
-      title: "National Score Bureau",
-      desc: "Establish VEDYRA Labs as the national utility bureau for vehicle safety and health validation, trusted by insurers, manufacturers, and buyers."
+      title: "National Standardizing Layer",
+      desc: "Establish VEDYRA Labs as the foundational utility layer for vehicle safety and health validation, trusted by the mobility ecosystem."
     }
   ];
 
@@ -135,7 +135,7 @@ function AboutPage() {
               <span className="text-gradient">Future Scope</span>
             </h1>
             <p className="mt-6 max-w-2xl text-lg leading-relaxed text-muted-foreground">
-              Deep dive into what we do today, what we want to achieve tomorrow, and our ultimate aspirations to build India's neutral Vehicle Health Score Bureau.
+              Deep dive into what we do today, what we want to achieve tomorrow, and our ultimate aspirations to build India's neutral telemetry evaluation network.
             </p>
           </Reveal>
 
@@ -272,34 +272,6 @@ function AboutPage() {
             )}
           </AnimatePresence>
 
-          {/* Incubation Callout Banner */}
-          <Reveal>
-            <div className="relative overflow-hidden rounded-[2.5rem] border border-border-strong p-10 md:p-14 text-center">
-              <div className="absolute inset-0 -z-10" style={{ background: "var(--gradient-hero)" }} />
-              <div className="absolute -right-20 -bottom-20 -z-10 h-64 w-64 animate-aurora rounded-full opacity-30 blur-3xl" style={{ background: "var(--gradient-aurora)" }} />
-              
-              <div className="inline-flex items-center gap-2 rounded-full border border-border-strong bg-white/5 px-3 py-1 mb-4 font-mono text-[9px] uppercase tracking-wider text-muted-foreground">
-                <Sparkles className="h-3 w-3 text-gold" /> Supported under Bihar Startup Policy
-              </div>
-              
-              <h3 className="font-display text-2xl font-semibold md:text-3xl">
-                Incubated at <span className="text-gradient">BIT Patna Incubation Centre</span>
-              </h3>
-              <p className="mx-auto mt-4 max-w-2xl text-sm leading-relaxed text-muted-foreground">
-                Our operations and deep-tech telematics research are fostered within the BIT Patna incubation ecosystem, helping us scale from a research concept to a commercially viable utility bureau.
-              </p>
-              
-              <div className="mt-8 flex flex-wrap justify-center gap-4">
-                <a
-                  href="/#contact"
-                  className="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-primary to-secondary px-6 py-3 text-sm font-medium text-primary-foreground shadow-[0_15px_60px_-10px_oklch(0.62_0.22_280/0.8)]"
-                >
-                  Contact VEDYRA Labs
-                  <ArrowRight className="h-4 w-4" />
-                </a>
-              </div>
-            </div>
-          </Reveal>
 
         </div>
       </section>
@@ -316,7 +288,6 @@ function AboutPage() {
             <Link to="/credits" className="transition hover:text-foreground">Credits & Team</Link>
             <Link to="/about" className="transition hover:text-foreground">About</Link>
             <a href="/#technology" className="transition hover:text-foreground">Architecture</a>
-            <a href="/#pricing" className="transition hover:text-foreground">Pricing</a>
             <a href="/#contact" className="transition hover:text-foreground">Contact</a>
           </nav>
           <div className="font-mono">© 2026 · ITS-VHS-2026-IN · Built for India</div>

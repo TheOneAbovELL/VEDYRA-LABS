@@ -2,10 +2,8 @@ import { motion, useScroll, useSpring, useTransform } from "framer-motion";
 import { Link } from "@tanstack/react-router";
 
 const links = [
-  { href: "/#technology", label: "Technology" },
-  { href: "/#score", label: "VHS Score" },
-  { href: "/#ecosystem", label: "Ecosystem" },
-  { href: "/#pricing", label: "Pricing" },
+  { href: "/#research", label: "Research" },
+  { href: "/#mission", label: "Mission" },
   { href: "/#team", label: "Team" },
 ];
 
@@ -60,17 +58,6 @@ export function Nav() {
             Credits
           </Link>
         </nav>
-
-
-        <a
-          href="#contact"
-          className="group relative inline-flex items-center gap-1.5 overflow-hidden rounded-full bg-gradient-to-r from-primary to-secondary px-4 py-2 text-sm font-medium text-primary-foreground shadow-[0_0_30px_-5px_oklch(0.62_0.22_280/0.6)] transition hover:shadow-[0_0_50px_-5px_oklch(0.62_0.22_280/0.8)]"
-        >
-          <span className="relative">Request Access</span>
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" className="transition group-hover:translate-x-0.5">
-            <path d="M5 12h14M13 5l7 7-7 7" />
-          </svg>
-        </a>
       </div>
     </motion.header>
   );

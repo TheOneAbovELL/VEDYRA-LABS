@@ -35,9 +35,9 @@ export const team: TeamMember[] = [
     photo: mallick,
     linkedin: "https://www.linkedin.com/in/dheeresh-k-mallick-7811633a/",
     long: [
-      "Dr. Dheeresh K. Mallick is the senior advisor to VEDYRA Labs and the originator of the project's foundational proposal idea. The central thesis — treating vehicle telematics as a credit-bureau-grade signal for the Indian motor-insurance market — emerged from his direction, and the strongest analytical inputs that shaped the Hyundai Innovation Challenge submission came from his desk.",
+      "Dr. Dheeresh K. Mallick is the senior advisor to VEDYRA Labs and the originator of the project's foundational proposal idea. The central thesis — treating vehicle telematics as a credit-bureau-grade signal for the Indian motor-insurance market — emerged from his direction, and the strongest analytical inputs that shaped the core research came from his desk.",
       "With decades of experience in academic leadership and applied research at Birla Institute of Technology, Mesra, he provides the institutional gravity required to position a student-founded bureau as a credible, neutral layer between OEMs, insurers and regulators. He has guided generations of researchers in AI, systems and applied computing — a track record that anchors VEDYRA's technical claims.",
-      "He guides VEDYRA on governance design (the proposed VHS Governance Board with IRDAI, SIAM and consumer representation), institutional partnerships with research labs and government bodies, IRDAI sandbox positioning, and the long-horizon roadmap from a four-metro pilot to a 2-lakh-vehicle validation fleet and full bureau designation.",
+      "He guides VEDYRA on governance design (the proposed VHS Governance Board with IRDAI, SIAM and consumer representation), institutional partnerships with research labs and government bodies, regulatory positioning, and the long-horizon roadmap from a regional pilot to a large-scale validation fleet.",
       "His advisory role ensures that every architectural decision — from consent flows under DPDPA 2023 to royalty structures with OEMs — is made with India's regulatory and public-interest context at the centre. He remains the project's intellectual north star.",
     ],
     highlights: [
@@ -79,7 +79,7 @@ export const team: TeamMember[] = [
     long: [
       "Omjee is the founder and chief architect of VEDYRA Labs. A third-year B.Tech student in Artificial Intelligence & Machine Learning at Birla Institute of Technology, Mesra, he authored the Vehicle Health Score (VHS) framework — a 300–850 composite that mirrors CIBIL's role in banking and applies it to India's ₹80,000 Cr motor-insurance market.",
       "His work spans the full stack of the bureau: the five-dimensional scoring model (DBS · MHS · MCS · EES · ESH), the OEM-neutral ingestion API across BlueLink, ZConnect, BlueSense and SmartPlay, and the IRDAI-aligned commercial design that lets insurers price premiums dynamically while OEMs earn data royalties.",
-      "Omjee leads VEDYRA's submission to the Hyundai Innovation Challenge 2026 (ITS-VHS-2026-IN) and drives partnerships with OEMs, insurers and the IRDAI Regulatory Sandbox.",
+      "Omjee leads VEDYRA's initial research and core framework engineering (ITS-VHS-2026-IN) and drives partnerships with OEMs, insurers and regulatory entities.",
     ],
     highlights: [
       { label: "Institution", value: "BIT Mesra" },
