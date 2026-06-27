@@ -132,7 +132,7 @@ function CreditsPage() {
 
       <footer className="border-t border-border py-10">
         <div className="mx-auto max-w-7xl px-6 text-center font-mono text-xs text-muted-foreground">
-          © 2026 VEDYRA Labs · ITS-VHS-2026-IN
+          © 2026 VEDYRA Labs · Built for India
         </div>
       </footer>
     </div>

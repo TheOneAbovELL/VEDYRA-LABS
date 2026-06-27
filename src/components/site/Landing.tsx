@@ -53,8 +53,6 @@ export default function Landing() {
                   <span className="relative inline-flex h-1.5 w-1.5 rounded-full bg-success" />
                 </span>
                 <span className="text-muted-foreground">National Deep-Tech Research · 2026</span>
-                <span className="h-3 w-px bg-border-strong" />
-                <span className="text-foreground/90">ITS-VHS-2026-IN</span>
               </div>
             </Reveal>
 
@@ -427,7 +425,7 @@ export default function Landing() {
             <a href="#technology" className="transition hover:text-foreground">Architecture</a>
             <a href="#contact" className="transition hover:text-foreground">Contact</a>
           </nav>
-          <div className="font-mono">© 2026 · ITS-VHS-2026-IN · Built for India</div>
+          <div className="font-mono">© 2026 VEDYRA Labs · Built for India</div>
         </div>
       </footer>
 

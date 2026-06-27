@@ -40,13 +40,13 @@ function AboutPage() {
   const whatWeDoItems = [
     {
       icon: Cpu,
-      title: "Telematics Standardization",
-      desc: "We stream and normalize raw vehicle telemetry (IMU, GNSS, OBD-II, and BMS data) from multiple OEM platforms at 10 Hz into unified data schemas."
+      title: "Data Stream Standardization",
+      desc: "We stream and normalize raw unstructured data from multiple distributed enterprise platforms into unified schemas."
     },
     {
       icon: Activity,
-      title: "Telemetry Evaluation Models",
-      desc: "Our engine computes a neutral evaluation standard (300-850) built on multiple analytical factors to assess objective profiles."
+      title: "Predictive Intelligence Models",
+      desc: "Our engine computes a neutral evaluation standard built on multiple analytical factors to assess objective risk profiles."
     },
     {
       icon: Database,
@@ -64,45 +64,45 @@ function AboutPage() {
     {
       icon: TrendingUp,
       title: "Metropolitan Pilot Scale",
-      desc: "Deploy an initial pilot tracking 500+ connected entities across Tier 1 Indian cities to calibrate algorithms with real-world road and weather conditions."
+      desc: "Deploy an initial pilot tracking connected entities across Tier 1 Indian cities to calibrate algorithms with real-world complex conditions."
     },
     {
       icon: UserCheck,
-      title: "Owner Consent Interfaces",
-      desc: "Build an intuitive owner-facing interface, allowing drivers to view their evaluation metrics and explicitly consent to secure data transmission."
+      title: "Transparent Consent Interfaces",
+      desc: "Build an intuitive user-facing interface, allowing entities to view their evaluation metrics and explicitly consent to secure data transmission."
     },
     {
       icon: Code,
       title: "Unified Ecosystem APIs",
-      desc: "Publish developer portals and REST APIs for research groups and mobility networks, supporting millisecond response times for telemetry insights."
+      desc: "Publish developer portals and REST APIs for research groups and enterprise networks, supporting millisecond response times for intelligence insights."
     },
     {
       icon: LineChart,
       title: "Predictive Health Correlation",
-      desc: "Demonstrate a verified lift in predictive accuracy for vehicle component longevity compared to traditional static metric baselines."
+      desc: "Demonstrate a verified lift in predictive accuracy for operational longevity compared to traditional static metric baselines."
     }
   ];
 
   const futureScopeItems = [
     {
       icon: Zap,
-      title: "EV State-of-Health Diagnostics",
-      desc: "Construct predictive degradation models for EV lithium-ion batteries to standardize secondhand EV valuation indices."
+      title: "State-of-Health Diagnostics",
+      desc: "Construct predictive degradation models for complex hardware systems to standardize secondhand valuation indices."
     },
     {
       icon: Workflow,
       title: "Registry Deep Fusion",
-      desc: "Fuse real-time vehicle telematics indices directly with central vehicle registries to automate compliance audits and safety research."
+      desc: "Fuse real-time predictive indices directly with central data registries to automate compliance audits and large-scale research."
     },
     {
       icon: Share2,
-      title: "Open Telematics Protocol",
-      desc: "Publish and license open-source telematics middleware libraries, helping the broader research community extract vehicle telemetry securely."
+      title: "Open Intelligence Protocol",
+      desc: "Publish and license open-source middleware libraries, helping the broader research community extract insights securely."
     },
     {
       icon: Compass,
       title: "National Standardizing Layer",
-      desc: "Establish VEDYRA Labs as the foundational utility layer for vehicle safety and health validation, trusted by the mobility ecosystem."
+      desc: "Establish VEDYRA Labs as the foundational utility layer for predictive validation, trusted by the wider ecosystem."
     }
   ];
 
@@ -290,7 +290,7 @@ function AboutPage() {
             <a href="/#technology" className="transition hover:text-foreground">Architecture</a>
             <a href="/#contact" className="transition hover:text-foreground">Contact</a>
           </nav>
-          <div className="font-mono">© 2026 · ITS-VHS-2026-IN · Built for India</div>
+          <div className="font-mono">© 2026 VEDYRA Labs · Built for India</div>
         </div>
       </footer>
     </div>
