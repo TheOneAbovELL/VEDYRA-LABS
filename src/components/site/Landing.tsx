@@ -349,7 +349,7 @@ export default function Landing() {
                 Get in touch with <span className="text-gradient">VEDYRA Labs</span>
               </h2>
               <p className="mt-6 text-muted-foreground text-base md:text-lg max-w-2xl mx-auto italic border-l-2 border-primary/50 pl-4 py-2 bg-white/5 rounded-r-lg shadow-sm">
-                "We believe that mobility data should not be siloed; it should be securely and neutrally translated to build trust between vehicles, drivers, and the digital transport ecosystem."
+                "We believe that complex data should not remain siloed; it must be securely transformed into explainable intelligence to build trust between decentralized networks and enterprise ecosystems."
               </p>
             </div>
           </Reveal>
