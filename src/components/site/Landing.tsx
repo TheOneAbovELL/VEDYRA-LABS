@@ -6,6 +6,7 @@ import { ScoreGauge } from "@/components/site/ScoreGauge";
 import { SystemDiagram } from "@/components/site/SystemDiagram";
 import { Parallax, ScrollReveal } from "@/components/site/Parallax";
 import { team } from "@/lib/team";
+import { Mail, MapPin, Clock, Building, Award, ShieldCheck, Cpu, FlaskConical, GraduationCap, ArrowRight } from "lucide-react";
 
 const subScores = [
   { code: "DBS", name: "Driving Behaviour", weight: 30, max: 165, color: "oklch(0.62 0.22 280)", desc: "IMU events, speed profile, ABS/ESC, GNSS trips" },
@@ -602,39 +603,160 @@ Authorization: Bearer {API_KEY}
         </div>
       </section>
 
-      {/* ============== CTA ============== */}
-      <section id="contact" className="relative py-32">
-        <div className="mx-auto max-w-6xl px-6">
+      {/* ============== CONTACT US & INCUBATION SECTION ============== */}
+      <section id="contact" className="relative py-32 border-t border-border/40">
+        <div className="mx-auto max-w-7xl px-6">
           <Reveal>
-            <div className="relative overflow-hidden rounded-[2.5rem] border border-border-strong p-12 md:p-20">
-              <div className="absolute inset-0 -z-10" style={{ background: "var(--gradient-hero)" }} />
-              <div className="absolute -left-20 -top-20 -z-10 h-80 w-80 animate-aurora rounded-full opacity-50 blur-3xl" style={{ background: "var(--gradient-aurora)" }} />
-
-              <SectionLabel>Get in touch</SectionLabel>
-              <h2 className="mt-4 font-display text-4xl font-semibold leading-tight md:text-6xl">
-                Ready to transform <br />
-                <span className="text-gradient">motor insurance in India?</span>
+            <div className="text-center max-w-3xl mx-auto mb-16">
+              <SectionLabel>Contact & Incubation</SectionLabel>
+              <h2 className="mt-4 font-display text-4xl font-semibold leading-tight md:text-5xl">
+                Get in touch with <span className="text-gradient">VEDYRA Labs</span>
               </h2>
-              <p className="mt-5 max-w-xl text-muted-foreground">
-                Partner with VEDYRA as an OEM data contributor, an insurer subscriber, or a research collaborator.
+              <p className="mt-4 text-muted-foreground text-base md:text-lg">
+                VEDYRA Labs is a student-founded research startup incubated under the BIT Patna Incubation Centre and supported under the Bihar Startup Policy.
               </p>
-
-              <div className="mt-10 flex flex-wrap gap-3">
-                <a
-                  href="mailto:hello@vedyra.in"
-                  className="group inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-primary to-secondary px-6 py-3 text-sm font-medium text-primary-foreground shadow-[0_15px_60px_-10px_oklch(0.62_0.22_280/0.8)]"
-                >
-                  Request early access
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" className="transition group-hover:translate-x-1">
-                    <path d="M5 12h14M13 5l7 7-7 7" />
-                  </svg>
-                </a>
-                <a href="mailto:partners@vedyra.in" className="inline-flex items-center gap-2 rounded-full border border-border-strong bg-white/5 px-6 py-3 text-sm transition hover:bg-white/10">
-                  Become an OEM partner
-                </a>
-              </div>
             </div>
           </Reveal>
+
+          <div className="grid gap-8 lg:grid-cols-12 items-start">
+            {/* Left Column: Contact details & Incubation highlight */}
+            <div className="lg:col-span-5 space-y-6">
+              <Reveal delay={0.1}>
+                <div className="glass relative overflow-hidden rounded-3xl border border-border-strong p-8 shadow-card">
+                  <div className="absolute -right-10 -bottom-10 -z-10 h-40 w-40 animate-aurora rounded-full opacity-20 blur-2xl" style={{ background: "var(--gradient-aurora)" }} />
+                  
+                  <h3 className="font-display text-xl font-semibold text-foreground mb-6 flex items-center gap-2">
+                    <Building className="h-5 w-5 text-primary" />
+                    Incubated Office
+                  </h3>
+
+                  <div className="space-y-6">
+                    <div className="flex gap-4">
+                      <div className="flex-shrink-0 h-10 w-10 rounded-full border border-border bg-white/5 flex items-center justify-center text-primary">
+                        <MapPin className="h-5 w-5" />
+                      </div>
+                      <div>
+                        <h4 className="font-mono text-xs uppercase tracking-wider text-muted-foreground">Office Address</h4>
+                        <p className="mt-1 text-sm text-foreground/90 leading-relaxed font-sans">
+                          Birla Institute of Technology, Patna Campus,<br />
+                          Samanpura, Near Patna Veterinary College,<br />
+                          Patna, Bihar 800014
+                        </p>
+                      </div>
+                    </div>
+
+                    <div className="flex gap-4">
+                      <div className="flex-shrink-0 h-10 w-10 rounded-full border border-border bg-white/5 flex items-center justify-center text-primary">
+                        <Clock className="h-5 w-5" />
+                      </div>
+                      <div>
+                        <h4 className="font-mono text-xs uppercase tracking-wider text-muted-foreground">Working Hours</h4>
+                        <p className="mt-1 text-sm text-foreground/90 font-sans">
+                          Monday to Saturday: 8:00 AM – 5:00 PM<br />
+                          <span className="text-muted-foreground">(Sundays closed)</span>
+                        </p>
+                      </div>
+                    </div>
+
+                    <div className="flex gap-4">
+                      <div className="flex-shrink-0 h-10 w-10 rounded-full border border-border bg-white/5 flex items-center justify-center text-primary">
+                        <Mail className="h-5 w-5" />
+                      </div>
+                      <div>
+                        <h4 className="font-mono text-xs uppercase tracking-wider text-muted-foreground">Contact Email</h4>
+                        <a 
+                          href="mailto:vedyralabs@gmail.com" 
+                          className="mt-1 inline-block text-sm text-foreground hover:text-primary transition font-sans font-medium underline underline-offset-4 decoration-primary/40"
+                        >
+                          vedyralabs@gmail.com
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </Reveal>
+
+              <Reveal delay={0.2}>
+                <div className="glass rounded-3xl border border-border-strong p-8">
+                  <h3 className="font-display text-lg font-semibold text-foreground mb-3 flex items-center gap-2">
+                    <Award className="h-5 w-5 text-gold" />
+                    Government Recognized
+                  </h3>
+                  <p className="text-sm text-muted-foreground leading-relaxed">
+                    Fostered under the Bihar Start-up Policy (2022-2027) in partnership with the Government of Bihar's Department of Industries to build deep-tech telemetry standards for motor insurance.
+                  </p>
+                </div>
+              </Reveal>
+            </div>
+
+            {/* Right Column: About the Incubation Centre */}
+            <div className="lg:col-span-7">
+              <Reveal delay={0.25}>
+                <div className="glass relative overflow-hidden rounded-3xl border border-border-strong p-8 md:p-10 shadow-card">
+                  <div className="absolute inset-0 -z-10" style={{ background: "var(--gradient-hero)" }} />
+                  <div className="absolute -left-20 -top-20 -z-10 h-64 w-64 animate-aurora rounded-full opacity-35 blur-3xl" style={{ background: "var(--gradient-aurora)" }} />
+
+                  <h3 className="font-display text-2xl font-bold text-foreground mb-4">
+                    BIT Patna Incubation Centre
+                  </h3>
+                  
+                  <p className="text-muted-foreground text-sm leading-relaxed mb-8">
+                    The BIT Patna Incubation Centre supports tech and business startups under the Bihar Startup Policy. Operating in partnership with the Government of Bihar’s Department of Industries, the centre helps student and regional entrepreneurs transition their ideas from prototypes to commercially viable products through seed funding, workspace access, and expert mentorship.
+                  </p>
+
+                  <h4 className="font-mono text-xs uppercase tracking-wider text-muted-foreground mb-4">
+                    Key Support & Infrastructure
+                  </h4>
+
+                  <div className="grid gap-4 sm:grid-cols-2">
+                    {[
+                      {
+                        title: "Dedicated Workspace",
+                        desc: "Air-conditioned co-working zones, meeting rooms, and high-speed internet infrastructure.",
+                        icon: Cpu
+                      },
+                      {
+                        title: "Specialized Lab Access",
+                        desc: "Access to engineering, technology, and computing labs to build and test prototypes.",
+                        icon: FlaskConical
+                      },
+                      {
+                        title: "Seed Support",
+                        desc: "Initial seed funds and financial grants provided under the Bihar Start-up Policy.",
+                        icon: ShieldCheck
+                      },
+                      {
+                        title: "Faculty Network",
+                        desc: "Direct connection with subject-matter experts from the BIT faculty for technical validation.",
+                        icon: GraduationCap
+                      }
+                    ].map((item, idx) => (
+                      <div key={idx} className="border border-border/40 bg-white/5 rounded-2xl p-4 hover:border-primary/30 transition-all duration-300">
+                        <div className="h-8 w-8 rounded-lg bg-primary/10 text-primary flex items-center justify-center mb-3">
+                          <item.icon className="h-4 w-4" />
+                        </div>
+                        <h5 className="font-display text-sm font-semibold text-foreground mb-1">{item.title}</h5>
+                        <p className="text-xs text-muted-foreground leading-relaxed">{item.desc}</p>
+                      </div>
+                    ))}
+                  </div>
+
+                  <div className="mt-8 pt-8 border-t border-border/40 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+                    <span className="text-xs text-muted-foreground font-sans">
+                      Are you a student or innovator seeking to join?
+                    </span>
+                    <a 
+                      href="mailto:vedyralabs@gmail.com?subject=Inquiry%20regarding%20BIT%20Patna%20Incubation"
+                      className="group inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-primary to-secondary px-5 py-2.5 text-xs font-semibold text-primary-foreground shadow-[0_10px_30px_-5px_oklch(0.62_0.22_280/0.6)] hover:shadow-[0_15px_40px_-5px_oklch(0.62_0.22_280/0.8)] transition-all duration-300"
+                    >
+                      Connect with Incubation Team
+                      <ArrowRight className="h-3.5 w-3.5 transition group-hover:translate-x-0.5" />
+                    </a>
+                  </div>
+                </div>
+              </Reveal>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -648,9 +770,10 @@ Authorization: Bearer {API_KEY}
           </div>
           <nav className="flex flex-wrap items-center gap-4">
             <Link to="/credits" className="transition hover:text-foreground">Credits & Team</Link>
+            <Link to="/about" className="transition hover:text-foreground">About</Link>
             <a href="#technology" className="transition hover:text-foreground">Architecture</a>
             <a href="#pricing" className="transition hover:text-foreground">Pricing</a>
-            <a href="mailto:hello@vedyra.in" className="transition hover:text-foreground">Contact</a>
+            <a href="#contact" className="transition hover:text-foreground">Contact</a>
           </nav>
           <div className="font-mono">© 2026 · ITS-VHS-2026-IN · Built for India</div>
         </div>

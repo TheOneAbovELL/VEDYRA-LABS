@@ -48,6 +48,12 @@ export function Nav() {
             </a>
           ))}
           <Link
+            to="/about"
+            className="rounded-full px-3.5 py-1.5 text-sm text-muted-foreground transition hover:bg-white/5 hover:text-foreground"
+          >
+            About
+          </Link>
+          <Link
             to="/credits"
             className="rounded-full px-3.5 py-1.5 text-sm text-muted-foreground transition hover:bg-white/5 hover:text-foreground"
           >
